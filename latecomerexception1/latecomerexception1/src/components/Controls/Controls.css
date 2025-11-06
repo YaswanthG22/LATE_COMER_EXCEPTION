@@ -1,0 +1,109 @@
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+/* Left and Middle columns */
+.left-section,
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+/* === File Upload Section (Right Side) === */
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0.8;
+}
+
+/* === Smaller Inputs === */
+.small-field input[type="date"],
+.small-field input[type="text"],
+.small-field input[type="file"] {
+  width: 160px; /* smaller width for dates */
+  padding: 6px 8px;
+  font-size: 0.9rem;
+}
+
+/* === Labels === */
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* === Input Styling === */
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
+  transition: border-color 0.2s ease-in-out, background 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #fff;
+}
+
+/* === Submit Button === */
+.submit-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: #1d4ed8;
+}
+
+.submit-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  .controls-container {
+    flex-direction: column;
+  }
+
+  .small-field input {
+    width: 100%;
+  }
+
+  .file-upload {
+    width: 100%;
+  }
+
+  .submit-container {
+    text-align: center;
+  }
+}
