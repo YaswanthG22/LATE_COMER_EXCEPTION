@@ -1,0 +1,138 @@
+/* ================================
+   Submitted Records Table Styles (Light Theme)
+   ================================ */
+
+.records-section {
+  margin: 40px auto;
+  padding: 25px 35px;
+  background-color: #f8f9fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  color: #222;
+  width: 95%;
+  max-width: 1100px;
+  transition: all 0.3s ease;
+}
+
+.records-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #0077ff;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* ================================
+   Table Wrapper
+   ================================ */
+.records-table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+/* ================================
+   Table
+   ================================ */
+.records-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.records-table:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.records-table th,
+.records-table td {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+}
+
+.records-table th {
+  background-color: #f0f0f0;
+  color: #0077ff;
+  font-weight: 600;
+  border-bottom: 2px solid #0077ff;
+}
+
+.records-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.records-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.records-table tr:hover {
+  background-color: #f1f7ff;
+  transition: background-color 0.2s ease;
+}
+
+/* ================================
+   PDF Link
+   ================================ */
+.pdf-link {
+  color: #0077ff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pdf-link:hover {
+  color: #00b894;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+/* ================================
+   No records message
+   ================================ */
+.no-records {
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+  padding: 30px 0;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+@media (max-width: 768px) {
+  .records-section {
+    padding: 15px 10px;
+  }
+
+  .records-table th,
+  .records-table td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .records-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .records-table-wrapper {
+    overflow-x: auto;
+  }
+}
+
+/* ================================
+   Smooth Scroll + Transitions
+   ================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+.records-table th,
+.records-table td,
+.records-section {
+  transition: all 0.2s ease-in-out;
+}
