@@ -1,0 +1,88 @@
+/* ============================
+   FILTERS SECTION CONTAINER
+   ============================ */
+.records-filters {
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+  max-width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================
+   FILTER ROW — SIDE BY SIDE
+   ============================ */
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* ============================
+   INDIVIDUAL FILTER ITEM
+   ============================ */
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+}
+
+.filter-item label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 6px;
+}
+
+/* ============================
+   INPUTS & SELECTS
+   ============================ */
+.filter-item input,
+.filter-item select {
+  padding: 10px 14px;
+  border: 1px solid #d0d7e5;
+  background: #f9fbff;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s ease;
+  width: 100%;
+}
+
+/* Focus effects */
+.filter-item input:focus,
+.filter-item select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: #ffffff;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.35);
+}
+
+/* ============================
+   Letter No (Search + Dropdown)
+   ============================ */
+.filter-item div {
+  display: flex;
+  gap: 10px;
+}
+
+/* ============================
+   RESPONSIVENESS
+   ============================ */
+@media (max-width: 768px) {
+  .filter-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .filter-item {
+    width: 100%;
+  }
+
+  .filter-item div {
+    flex-direction: column;
+  }
+}
