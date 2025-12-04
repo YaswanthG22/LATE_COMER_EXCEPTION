@@ -1,0 +1,117 @@
+/* ===============================
+   Employee Table Wrapper
+   =============================== */
+
+.table-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+/* Table Title */
+.table-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 14px;
+}
+
+/* Search Bar */
+.employee-search {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background: #f8faff;
+}
+
+.employee-search:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.3);
+}
+
+/* ===============================
+   Table
+   =============================== */
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.employee-table thead {
+  background: #2563eb;
+  color: white;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* zebra rows */
+.employee-table tbody tr:nth-child(even) {
+  background: #f3f6ff;
+}
+
+.employee-table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+/* row hover */
+.employee-table tbody tr:hover {
+  background: #e6efff;
+  cursor: pointer;
+}
+
+/* clickable name button */
+.link-button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+/* delete button */
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* Limit visible rows and enable scroll */
+.employee-table tbody {
+  display: block;
+  max-height: 200px; /* Adjust height for ~5 rows */
+  overflow-y: auto;
+}
+
+/* Keep header fixed */
+.employee-table thead,
+.employee-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
