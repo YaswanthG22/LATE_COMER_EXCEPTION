@@ -1,0 +1,132 @@
+/* ===== ROOT THEME ===== */
+:root {
+  --portal-bg: #020617;
+  --portal-surface: rgba(15, 23, 42, 0.92);
+  --portal-border: rgba(148, 163, 184, 0.28);
+  --portal-text: #e5e7eb;
+  --portal-muted: #9ca3af;
+  --portal-primary: #2563eb;
+  --portal-secondary: #38bdf8;
+  --portal-radius-lg: 22px;
+  --portal-radius-md: 16px;
+  --portal-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
+}
+
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(
+    circle at top left,
+    #0f172a,
+    #020617,
+    #000
+  );
+  color: var(--portal-text);
+  overflow-x: hidden;
+}
+
+/* ===== BACKGROUND GLOWS ===== */
+.portal-bg-circle {
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(90px);
+  opacity: 0.45;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.portal-bg-1 {
+  width: 280px;
+  height: 280px;
+  background: rgba(56, 189, 248, 0.35);
+  top: -80px;
+  left: -60px;
+}
+
+.portal-bg-2 {
+  width: 360px;
+  height: 360px;
+  background: rgba(129, 140, 248, 0.35);
+  bottom: -140px;
+  right: -60px;
+}
+
+/* ===== HEADINGS ===== */
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  padding-top: 0;
+  background: linear-gradient(
+    to right,
+    var(--portal-primary),
+    var(--portal-secondary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ===== PAGE CONTAINERS ===== */
+.container,
+.container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== CARDS (GLASS EFFECT) ===== */
+.card {
+  background: var(--portal-surface) !important;
+  border: 1px solid var(--portal-border) !important;
+  border-radius: var(--portal-radius-md) !important;
+  box-shadow: var(--portal-shadow) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* ===== INPUTS ===== */
+input,
+select,
+textarea {
+  background: rgba(2, 6, 23, 0.9) !important;
+  color: var(--portal-text) !important;
+  border: 1px solid var(--portal-border) !important;
+  border-radius: 10px !important;
+}
+
+input::placeholder {
+  color: var(--portal-muted);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: var(--portal-secondary) !important;
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.45) !important;
+}
+
+/* ===== TABLE TEXT ===== */
+table {
+  color: var(--portal-text);
+}
+
+/* ===== BOOTSTRAP OVERRIDES (SAFE) ===== */
+.container,
+.container-fluid {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}

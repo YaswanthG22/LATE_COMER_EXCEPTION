@@ -1,0 +1,19 @@
+.ui-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ui-table th {
+  background: #2563eb;
+  padding: 10px;
+  color: white;
+}
+
+.ui-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ui-table tr:nth-child(even) {
+  background: #f3f6ff;
+}

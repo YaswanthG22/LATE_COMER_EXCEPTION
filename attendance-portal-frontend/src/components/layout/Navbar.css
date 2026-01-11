@@ -1,0 +1,74 @@
+/* ===== NAVBAR WRAPPER ===== */
+.app-navbar {
+  position: fixed;                 /* single source of truth */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;                    /* 🔥 LOCK HEIGHT */
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px;                 /* vertical padding removed */
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* ===== LEFT SIDE ===== */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.app-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+/* ===== LINKS ===== */
+.nav-link {
+  color: #e0e7ff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.nav-link.active {
+  background: rgba(255,255,255,0.28);
+  color: #ffffff;
+}
+
+/* ===== RIGHT SIDE ===== */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-btn {
+  background: rgba(255,255,255,0.18);
+  border: none;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(255,255,255,0.3);
+}

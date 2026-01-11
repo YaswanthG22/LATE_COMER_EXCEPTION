@@ -1,0 +1,52 @@
+.home-container {
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.main-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #1d4ed8;
+  margin-bottom: 40px;
+}
+
+.module-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.module-card {
+  background: white;
+  width: 220px;
+  padding: 25px;
+  border-radius: 16px;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.module-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.module-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.module-card p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

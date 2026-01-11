@@ -1,0 +1,10 @@
+.ui-input-group {
+  display: flex;
+  flex-direction: column;
+}
+.ui-input-group input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}

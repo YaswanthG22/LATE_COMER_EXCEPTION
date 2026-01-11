@@ -1,0 +1,31 @@
+/* ===== Layout ===== */
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Content Wrapper ===== */
+.content-wrapper {
+  display: flex;
+  margin-top: 64px; /* navbar height */
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* ===== Page Content ===== */
+.page-content {
+  margin: 0;                 /* 🔥 REMOVE LEFT GAP */
+  padding: 16px;             /* clean internal spacing */
+  width: 100%;               /* 🔥 FULL WIDTH */
+  padding-top: 16px;         /* 🔥 NO DOUBLE NAV OFFSET */
+}
+
+/* ===== Optional main content wrapper ===== */
+.main-content {
+  padding: 16px;
+  margin: 0;
+}

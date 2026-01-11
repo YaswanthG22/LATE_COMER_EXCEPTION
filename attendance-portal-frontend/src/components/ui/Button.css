@@ -1,0 +1,19 @@
+.ui-btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ui-btn:hover {
+  background: #1e40af;
+}
+
+.ui-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
